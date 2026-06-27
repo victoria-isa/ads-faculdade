@@ -1,0 +1,193 @@
+```
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gerencie as mesas da Soparia TADS">
+    <meta name="author" content="Isabella Victoria">
+    <meta name="theme-color" content="#d35400">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mesas.css">
+    
+    <title>Soparia TADS | Mesas</title>
+</head>
+
+<body>
+
+    <div class="envelope-geral">
+
+        <header class="barra-navegacao">
+            <div class="caixa-centralizada">
+                <div class="area-logotipo">
+                    <span class="simbolo" aria-hidden="true">🍲</span>
+                    <h1 class="cabecalho-principal">
+                        Soparia TADS
+                    </h1>
+                </div>
+
+                <nav aria-label="Menu principal">
+                    <ul class="opcoes-menu">
+                        <li><a href="index.html" class="selecionado" aria-current="page">🏠 Mesas</a></li>
+                        <li><a href="#" aria-disabled="true">📋 Cardápio</a></li>
+                        <li><a href="#" aria-disabled="true">📊 Relatórios</a></li>
+                        <li><a href="login.html">🚪 Sair</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="regiao-mesas">
+            <div class="caixa-centralizada-mesas">
+
+                <header class="cabecalho-mesas">
+                    <h2 class="titulo-principal">
+                        Gestão de Mesas
+                    </h2>
+                    <h5 class="texto-auxiliar">
+                        Selecione uma mesa para visualizar ou gerenciar pedidos
+                    </h5>
+
+                    <div class="indicadores-estado" aria-label="Legenda das cores das mesas">
+                        <div class="item-indicador">
+                            <span class="circulo livre" aria-hidden="true"></span>
+                            <span>Mesa Livre</span>
+                        </div>
+                        <div class="item-indicador">
+                            <span class="circulo ocupado" aria-hidden="true"></span>
+                            <span>Conta Aberta</span>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="grade-mesas">
+
+                    <a href="pedidos_1.html" class="cartao-mesa reservada" aria-label="Mesa 1, conta aberta, 4 itens, total R$ 85,90">
+                        <span class="icone-mesa" aria-hidden="true">🍲</span>
+                        <span class="numero-mesa">Mesa 1</span>
+                        <span class="estado-mesa reservada">Conta Aberta</span>
+                        <span class="detalhes-mesa">4 itens • R$ 85,90</span>
+                    </a>
+
+                    <a href="pedidos_2.html" class="cartao-mesa" aria-label="Mesa 2, livre, disponível">
+                        <span class="icone-mesa" aria-hidden="true">✓</span>
+                        <span class="numero-mesa">Mesa 2</span>
+                        <span class="estado-mesa disponivel">Livre</span>
+                        <span class="detalhes-mesa">Disponível</span>
+                    </a>
+
+                    <a href="pedidos_3.html" class="cartao-mesa reservada" aria-label="Mesa 3, conta aberta, 2 itens, total R$ 37,00">
+                        <span class="icone-mesa" aria-hidden="true">🍲</span>
+                        <span class="numero-mesa">Mesa 3</span>
+                        <span class="estado-mesa reservada">Conta Aberta</span>
+                        <span class="detalhes-mesa">2 itens • R$ 37,00</span>
+                    </a>
+
+                    <a href="pedidos_2.html" class="cartao-mesa">
+                        <span class="icone-mesa" aria-hidden="true">✓</span>
+                        <span class="numero-mesa">Mesa 4</span>
+                        <span class="estado-mesa disponivel">Livre</span>
+                        <span class="detalhes-mesa">Disponível</span>
+                    </a>
+
+                    <a href="pedidos_2.html" class="cartao-mesa">
+                        <span class="icone-mesa" aria-hidden="true">✓</span>
+                        <span class="numero-mesa">Mesa 5</span>
+                        <span class="estado-mesa disponivel">Livre</span>
+                        <span class="detalhes-mesa">Disponível</span>
+                    </a>
+
+                    <a href="pedidos_2.html" class="cartao-mesa">
+                        <span class="icone-mesa" aria-hidden="true">✓</span>
+                        <span class="numero-mesa">Mesa 6</span>
+                        <span class="estado-mesa disponivel">Livre</span>
+                        <span class="detalhes-mesa">Disponível</span>
+                    </a>
+
+                    <a href="pedidos_2.html" class="cartao-mesa">
+                        <span class="icone-mesa" aria-hidden="true">✓</span>
+                        <span class="numero-mesa">Mesa 7</span>
+                        <span class="estado-mesa disponivel">Livre</span>
+                        <span class="detalhes-mesa">Disponível</span>
+                    </a>
+
+                    <a href="pedidos_2.html" class="cartao-mesa">
+                        <span class="icone-mesa" aria-hidden="true">✓</span>
+                        <span class="numero-mesa">Mesa 8</span>
+                        <span class="estado-mesa disponivel">Livre</span>
+                        <span class="detalhes-mesa">Disponível</span>
+                    </a>
+
+                    <a href="pedidos_2.html" class="cartao-mesa">
+                        <span class="icone-mesa" aria-hidden="true">✓</span>
+                        <span class="numero-mesa">Mesa 9</span>
+                        <span class="estado-mesa disponivel">Livre</span>
+                        <span class="detalhes-mesa">Disponível</span>
+                    </a>
+
+                    <a href="pedidos_2.html" class="cartao-mesa">
+                        <span class="icone-mesa" aria-hidden="true">✓</span>
+                        <span class="numero-mesa">Mesa 10</span>
+                        <span class="estado-mesa disponivel">Livre</span>
+                        <span class="detalhes-mesa">Disponível</span>
+                    </a>
+                </div>
+            </div>
+        </main>
+
+        <footer class="rodape-sistema">
+            <div class="caixa-centralizada caixa-rodape">
+                <h4 class="texto-rodape">
+                    Sistema de Gestão - Soparia TADS
+                </h4>
+                <div class="texto-rodape">
+                    ℹ️ <button id="aboutBtn" aria-haspopup="dialog">Sobre o Sistema</button>
+                </div>
+            </div>
+        </footer>
+
+        <div id="modalAbout">
+            <div class="container-modal">
+
+                <header class="topo-modal">
+                    <div class="area-titulo">
+                        <span class="simbolo-modal" aria-hidden="true">💻</span>
+                        <h3 class="rotulo-modal" id="titulo-modal">Sobre o sistema</h3>
+                    </div>
+                    <button class="botao-fechar" id="modalCloseBtn" aria-label="Fechar modal">✕</button>
+                </header>
+
+                <div class="corpo-modal">
+                    <p>
+                        Este é um sistema de gestão para soparias, desenvolvido como 
+                        projeto avaliativo da disciplina de Desenvolvimento Web.
+                    </p>
+
+                    <p>Funcionalidades principais:</p>
+
+                    <ul>
+                        <li>Controle de mesas e pedidos</li>
+                        <li>Gerenciamento de cardápio</li>
+                        <li>Fechamento de contas</li>
+                        <li>Relatórios de vendas</li>
+                    </ul>
+                </div>
+
+                <footer class="final-modal">
+                    <div class="conteudo-final">
+                        <p><span class="destaque">Desenvolvido por:</span> Isabella Victoria</p>
+                        <p><span class="destaque">Disciplina:</span> Desenvolvimento Web - TADS</p>
+                        <p><span class="destaque">Ano:</span> 2026</p>
+                    </div>
+                </footer>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/modal.js" defer></script>
+</body>
+
+</html>

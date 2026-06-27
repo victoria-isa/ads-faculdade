@@ -1,0 +1,474 @@
+
+.simbolo {
+    font-size: 1.875em;
+}
+
+.caixa-centralizada {
+    width: 100%;
+    max-width: 87.5em;
+    margin: 0 auto;
+    padding: 0 0.9375em;
+    box-sizing: border-box;
+}
+
+.caixa-centralizada-mesas {
+    margin: 0 auto;
+    padding: 0 3.125em;
+    box-sizing: border-box;
+}
+
+.barra-navegacao {
+    background-color: var(--cor-branco);
+    box-shadow: rgba(0, 0, 0, 0.15) 0.122em 0.122em 0.1625em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 0.625em 0;
+}
+
+.regiao-mesas {
+    background: #dbdcef;
+    width: 100%;
+    padding-top: 6.25em;
+    padding-bottom: 0;
+}
+
+.cabecalho-principal {
+    font-weight: bold;
+    color: var(--cor-laranja);
+    font-size: 1.5625em;
+}
+
+.area-logotipo {
+    display: flex;
+    align-items: center;
+    gap: 0.625em;
+}
+
+.opcoes-menu {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 1em;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (min-width: 36.0625em) {
+    .opcoes-menu {
+        flex-direction: row;
+        gap: 0.5em;
+    }
+    
+    .area-logotipo {
+        margin-bottom: 0.625em;
+    }
+}
+
+.opcoes-menu a {
+    text-decoration: none;
+    color: var(--cor-cinza-escuro);
+    padding: 0.5em 1em;
+    display: block;
+    border-radius: var(--borda-m);
+}
+
+.opcoes-menu a.selecionado {
+    color: var(--cor-branco);
+    background: var(--cor-laranja);
+    padding: 0.5em 1.5em;
+    border-radius: var(--borda-m);
+    margin: 0 0.625em;
+    border-bottom: none;
+}
+
+.opcoes-menu a:hover {
+    color: var(--cor-laranja);
+}
+
+.opcoes-menu a:not(.selecionado):hover {
+    background-color: var(--cor-cinza-claro);
+    border-radius: var(--borda-m);
+    padding: 0.5em 1.5em;
+    margin: 0 0.625em;
+    color: var(--cor-cinza-escuro);
+}
+
+
+.cabecalho-mesas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.25em 0 0.625em 0;
+}
+
+.texto-auxiliar {
+    margin-top: 0.625em;
+    color: var(--cor-cinza-texto);
+    font-weight: 500;
+}
+
+.indicadores-estado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2em;
+    margin: 1.5em 0;
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width: 36.0625em) {
+    .indicadores-estado {
+        flex-direction: row;
+        gap: 2em;
+    }
+}
+
+.item-indicador {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    font-size: 0.9em;
+    color: var(--cor-cinza-escuro);
+}
+
+.circulo {
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.circulo.livre {
+    background-color: var(--cor-mesa-livre);
+}
+
+.circulo.ocupado {
+    background-color: var(--cor-mesa-ocupada);
+}
+
+.grade-mesas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    padding: 1em 0 2em 0;
+}
+
+@media screen and (min-width: 36.0625em) and (max-width: 62em) {
+    .grade-mesas {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.8em;
+    }
+    
+    .cartao-mesa {
+        padding: 1em 0.5em;
+    }
+    
+    .icone-mesa {
+        font-size: 2.2em;
+    }
+    
+    .numero-mesa {
+        font-size: 1em;
+    }
+    
+    .estado-mesa {
+        font-size: 0.75em;
+        padding: 0.2em 0.5em;
+    }
+
+    .opcoes-menu {
+        justify-self: center;
+    }
+}
+
+@media screen and (min-width: 62.0625em) {
+    .grade-mesas {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 1em;
+        row-gap: 0.5em;
+    }
+
+    .caixa-centralizada {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .area-logotipo {
+        display: flex;
+    }
+
+    .cabecalho-mesas .cabecalho-principal {
+        font-size: 2.1875em;
+    }
+
+    .cabecalho-mesas .texto-auxiliar {
+        font-size: 1.875em;
+    }
+
+    .item-indicador {
+        font-size: 1.25em;
+    }
+
+    .circulo {
+        width: 1.5625em;
+        height: 1.5625em;
+    }
+    
+    .caixa-centralizada-mesas {
+        max-width: 87.5em;
+    }
+    
+    .texto-rodape {
+        font-size: 1.25em;
+    }
+}
+
+.cartao-mesa {
+    background: var(--cor-branco);
+    border-radius: var(--borda-xg);
+    padding: 5.5em 0.3em;
+    box-shadow: var(--sombra-fraca);
+    text-align: center;
+    transition: all var(--tempo-normal);
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    border: 0.125em solid transparent;
+}
+
+.cartao-mesa.reservada .icone-mesa {
+    animation: pulsar 2s infinite;
+}
+
+@keyframes pulsar {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.cartao-mesa:hover {
+    background-color: var(--cor-cinza-claro);
+    transform: translateY(-0.5em);
+    box-shadow: var(--sombra-media);
+}
+
+.icone-mesa {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.numero-mesa {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--cor-cinza-escuro);
+}
+
+.estado-mesa {
+    font-size: 0.85em;
+    padding: 0.25em 0.75em;
+    border-radius: 1.25em;
+    font-weight: 500;
+}
+
+.estado-mesa.disponivel {
+    background: var(--cor-mesa-livre);
+    color: var(--cor-branco);
+}
+
+.estado-mesa.reservada {
+    background: var(--cor-mesa-ocupada);
+    color: var(--cor-branco);
+}
+
+.detalhes-mesa {
+    font-size: 0.8em;
+    color: var(--cor-cinza-texto);
+    margin-top: 0.5em;
+}
+
+.rodape-sistema {
+    background-color: var(--cor-fundo-escuro);
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+.caixa-rodape {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0.9375em;
+    box-sizing: border-box;
+}
+
+.texto-rodape {
+    color: var(--cor-branco);
+    font-size: 0.9375em;
+    margin: 0;
+}
+
+.texto-rodape a {
+    color: var(--cor-branco);
+    text-decoration: none;
+    margin-left: 0.3125em;
+    background-color: transparent;
+}
+
+.texto-rodape a:hover {
+    text-decoration: underline;
+}
+
+#aboutBtn { 
+    background: transparent; 
+    border: none; 
+    color: var(--cor-branco); 
+    cursor: pointer; 
+    font-size: inherit; 
+}
+
+#aboutBtn:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 36em) {
+    .caixa-rodape {
+        flex-direction: row;
+        height: 100%;
+        gap: 0.625em;
+        text-align: center;
+    }
+    
+    .regiao-mesas {
+        padding-top: 8.75em;
+    }
+
+    .cabecalho-mesas {
+        padding-top: 8.75em;
+    }
+}
+
+.envelope-geral {
+    height: fit-content;
+}
+
+#modalAbout {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+#modalAbout.active {
+    display: flex;
+}
+
+.container-modal {
+    width: fit-content;
+    max-width: 31.25em;
+    background-color: var(--cor-branco);
+    border-radius: var(--borda-m);
+    box-shadow: var(--sombra-forte);
+}
+
+.topo-modal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cor-laranja);
+    color: var(--cor-branco);
+    border-top-right-radius: var(--borda-m);
+    border-top-left-radius: var(--borda-m);
+    padding: var(--espaco-tres);
+}
+
+.area-titulo {
+    display: flex;
+    align-items: center;
+    color: var(--cor-branco);
+    gap: var(--espaco-dois);
+}
+
+.simbolo-modal {
+    margin-left: 0.625em;
+    font-size: var(--fonte-media);
+}
+
+.rotulo-modal {
+    margin: 0;
+    color: var(--cor-branco);
+    font-size: var(--fonte-media);
+}
+
+#modalCloseBtn {
+    background: transparent;
+    border: none;
+    margin-right: 0.625em;
+    cursor: pointer;
+    color: var(--cor-branco);
+    font-size: var(--fonte-media);
+    font-weight: bold;
+}
+
+#modalCloseBtn:hover {
+    opacity: 0.8;
+}
+
+.corpo-modal {
+    padding: var(--espaco-quatro);
+}
+
+.corpo-modal p {
+    font-size: var(--fonte-pequena);
+    margin-bottom: var(--espaco-tres);
+    color: var(--cor-cinza-escuro);
+}
+
+.corpo-modal ul {
+    margin-left: var(--espaco-quatro);
+    margin-bottom: var(--espaco-tres);
+}
+
+.corpo-modal li {
+    font-size: var(--fonte-pequena);
+    color: var(--cor-cinza-escuro);
+    margin-bottom: var(--espaco-dois);
+}
+
+.destaque {
+    font-weight: bold;
+}
+
+.final-modal {
+    background-color: var(--cor-cinza-claro);
+    border-bottom-right-radius: var(--borda-m);
+    border-bottom-left-radius: var(--borda-m);
+    padding: var(--espaco-tres) var(--espaco-quatro);
+}
+
+.conteudo-final p {
+    font-size: var(--fonte-pequena);
+    color: var(--cor-cinza-escuro);
+    margin-bottom: var(--espaco-dois);
+}

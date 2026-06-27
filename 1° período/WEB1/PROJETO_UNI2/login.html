@@ -1,0 +1,129 @@
+```
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Acesse o sistema de gestão da Soparia TADS">
+    <meta name="author" content="Isabella Victoria">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/login.css">
+
+    <title>Soparia TADS | Entrar no sistema</title>
+</head>
+
+<body>
+
+    <div class="pagina-login">
+
+        <section class="area-marca" aria-labelledby="titulo-marca">
+            <div class="icone-marca" aria-hidden="true">🍲</div>
+
+            <h1 class="titulo-marca" id="titulo-marca">
+                Soparia TADS
+            </h1>
+
+            <p class="subtitulo-marca">
+                Sistema de Gestão de Pedidos
+            </p>
+
+            <div class="lista-recursos" role="list" aria-label="Recursos do sistema">
+                <article class="item-recurso" role="listitem">
+                    <span class="icone-check" aria-hidden="true">✓</span>
+                    <p>Controle completo de mesas</p>
+                </article>
+
+                <article class="item-recurso" role="listitem">
+                    <span class="icone-check" aria-hidden="true">✓</span>
+                    <p>Gestão de cardápio em tempo real</p>
+                </article>
+
+                <article class="item-recurso" role="listitem">
+                    <span class="icone-check" aria-hidden="true">✓</span>
+                    <p>Fechamento de contas simplificado</p>
+                </article>
+
+                <article class="item-recurso" role="listitem">
+                    <span class="icone-check" aria-hidden="true">✓</span>
+                    <p>Relatórios de vendas automáticos</p>
+                </article>
+            </div>
+        </section>
+
+        <main class="area-formulario">
+            <div class="card-login">
+                <header class="cabecalho-card">
+                    <h2>Acessar o Sistema</h2>
+                    <p class="subtitulo-card">Entre com suas credenciais para gerenciar a soparia</p>
+                </header>
+
+                <aside class="dica-teste" role="note" aria-label="Dica de teste">
+                    <span aria-hidden="true">💡</span>
+                    <strong>Dica:</strong> Use "admin" / "admin123" para teste
+                </aside>
+
+                <form id="loginForm" method="GET" action="index.html">
+                    <fieldset>
+                        <legend style="position: absolute; width: 1px; height: 1px; overflow: hidden;">Dados de acesso
+                        </legend>
+
+                        <div class="grupo-campo">
+                            <label for="username" class="rotulo-campo">👤 Usuário</label>
+                            <input type="text" id="username" name="username" placeholder="Digite seu usuário" required
+                                minlength="6" maxlength="20" class="campo-entrada" aria-describedby="username-error">
+                            <div id="username-error" class="mensagem-erro"></div>
+                        </div>
+
+                        <div class="grupo-campo">
+                            <label for="password" class="rotulo-campo">🔒 Senha</label>
+                            <div class="campo-senha">
+                                <input type="password" id="password" name="password" placeholder="Digite sua senha"
+                                    required minlength="6" maxlength="12" class="campo-entrada"
+                                    aria-describedby="password-error">
+                                <button type="button" id="togglePassword" class="botao-olho"
+                                    aria-label="Mostrar ou esconder senha" title="Mostrar senha">
+                                    <span aria-hidden="true">👁️</span>
+                                </button>
+                            </div>
+                            <div id="password-error" class="mensagem-erro"></div>
+                        </div>
+
+                        <div class="opcoes-login">
+                            <label class="container-checkbox">
+                                <input type="checkbox" name="remember">
+                                <span class="checkmark"></span>
+                                Lembrar-me
+                            </label>
+                            <a href="#" class="link-esqueci">Esqueci minha senha</a>
+                        </div>
+
+                        <div class="botoes-login">
+                            <button type="submit" class="botao-primario">
+                                Entrar no Sistema
+                            </button>
+                            <a href="index.html" class="botao-outline">
+                                <span aria-hidden="true">🧑‍💻</span>
+                                Acessar como Visitante
+                            </a>
+                        </div>
+                    </fieldset>
+                </form>
+
+                <div class="divisor" role="separator">
+                </div>
+
+                <footer class="rodape-form">
+                    <p>Sistema desenvolvido para a disciplina de TADS<br>
+                        © 2026 Soparia TADS - <a href="#" rel="noopener">Suporte Técnico</a></p>
+                </footer>
+            </div>
+        </main>
+
+    </div>
+
+    <script src="js/login.js" defer></script>
+</body>
+
+</html>
